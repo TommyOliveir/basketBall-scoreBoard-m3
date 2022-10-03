@@ -93,3 +93,7 @@ function timeoOut() {
     timeoutSound.textContent = "Time Out";
   }, 5000);
 }
+
+function resetScore() {
+  location.reload();
+}
