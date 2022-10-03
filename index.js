@@ -5,6 +5,8 @@ const homeAdd1 = document.getElementById("homeAdd1")
 const homeAdd2 = document.getElementById("homeAdd2")
 const homeAdd3 = document.getElementById("homeAdd3")
 
+
+
 const guestAdd1 = document.getElementById("guestAdd1")
 const guestAdd2 = document.getElementById("guestAdd2")
 const guestAdd3 = document.getElementById("guestAdd3")
@@ -26,6 +28,8 @@ function homeadd2() {
     homeScore = homeScore + 2
     home.textContent = homeScore
 }
+
+
 
 function homeadd3() {
     homeScore = homeScore + 3
@@ -51,6 +55,7 @@ function guestadd3() {
 
 
 
+
 homeAdd1.addEventListener("click",  homeadd1)
 homeAdd2.addEventListener("click",  homeadd2)
 homeAdd3.addEventListener("click",  homeadd3)
@@ -58,3 +63,17 @@ homeAdd3.addEventListener("click",  homeadd3)
 guestAdd1.addEventListener("click",  guestadd1)
 guestAdd2.addEventListener("click",  guestadd2)
 guestAdd3.addEventListener("click",  guestadd3)
+
+/// audio button
+const audio = new Audio();
+audio.src = "nba.mp3"
+
+function generate() {
+    if(!audio.paused) { /* Check if it's not paused */
+        audio.pause();  /* To pause the audio */
+        audio.currentTime = 0;  /* To reset the time back to 0 */
+    }
+    else {
+        audio.play();  /* To make it play again */
+    }
+};

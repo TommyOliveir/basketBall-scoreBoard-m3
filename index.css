@@ -76,3 +76,9 @@ h3 {
     justify-content: space-between;
     margin-top: 1em;
 }
+.controls {
+    background: #F94F6D;
+    padding: 4em;
+    width: 60%;
+    margin: auto;
+}
