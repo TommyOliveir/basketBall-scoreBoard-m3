@@ -1,6 +1,7 @@
 const home = document.getElementById("home-score");
 const guest = document.getElementById("guest-score");
 const nbaSound = document.getElementById("nba-sound");
+const timeoutSound = document.getElementById("timeout-sound");
 
 const homeAdd1 = document.getElementById("homeAdd1");
 const homeAdd2 = document.getElementById("homeAdd2");
@@ -71,5 +72,18 @@ function generate() {
   }
 }
 
+///////////
 const audiotimeout = new Audio();
-audio.src = "";
+audiotimeout.src = "timeout-sound.mp3";
+
+function timeoOut() {
+  if (!audiotimeout.paused) {
+    /* Check if it's not paused */
+    audiotimeout.pause(); /* To pause the audio */
+    audiotimeout.currentTime = 0; /* To reset the time back to 0 */
+    timeoutSound.textContent = "Time Out";
+  } else {
+    audiotimeout.play(); /* To make it play again */
+    timeoutSound.textContent = "Stop";
+  }
+}
