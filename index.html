@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- google font -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>ScoreBoard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="sub-con">
-            <h3 class="team">HOME</h3>
-            <h2 class="score" id="home-score">0</h2>
-            <div class="btn-list">
-                <button id="homeAdd1" class="btn">+1</button>
-                <button id="homeAdd2" class="btn">+2</button>
-                <button id="homeAdd3" class="btn">+3</button>
-            </div>
+      <div class="sub-con">
+        <h3 class="team">HOME</h3>
+        <h2 class="score" id="home-score">0</h2>
+        <div class="btn-list">
+          <button id="homeAdd1" class="btn">+1</button>
+          <button id="homeAdd2" class="btn">+2</button>
+          <button id="homeAdd3" class="btn">+3</button>
         </div>
-        <div class="sub-con">
-            <h3 class="team">GUEST</h3>
-            <h2 class="score" id="guest-score">0</h2>
-            <div class="btn-list">
-                <button id="guestAdd1" class="btn">+1</button>
-                <button id="guestAdd2" class="btn">+2</button>
-                <button id="guestAdd3" class="btn">+3</button>
-            </div>
+      </div>
+      <div class="sub-con">
+        <h3 class="team">GUEST</h3>
+        <h2 class="score" id="guest-score">0</h2>
+        <div class="btn-list">
+          <button id="guestAdd1" class="btn">+1</button>
+          <button id="guestAdd2" class="btn">+2</button>
+          <button id="guestAdd3" class="btn">+3</button>
         </div>
+      </div>
     </div>
     <div class="controls">
-        <button id="sound " onclick="generate()">NBA Sound</button>
+      <button id="nba-sound" onclick="generate()">NBA Sound</button>
     </div>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
