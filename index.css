@@ -1,84 +1,99 @@
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* typography */
 .team {
-    text-align: center;
+  text-align: center;
 }
 
 @font-face {
-    font-family: digital;
-    src: url("digital-7.ttf");
+  font-family: digital;
+  src: url("digital-7.ttf");
 }
-
+h1 {
+  text-align: center;
+  color: #1b244a;
+  font-size: 4em;
+}
 h3 {
-    font-size: 3em;
-    margin: 0;
-    color: #ffff;
+  font-size: 3em;
+  margin: 0;
+  color: #ffff;
 }
 
 /* Layout */
 .container {
-    display: flex;
-    justify-content: space-around;
-    background:
-        #1b244a;
-    width: 60%;
-    margin: auto;
-    padding: 4em;
+  display: flex;
+  justify-content: space-around;
+  background: #1b244a;
+  width: 60%;
+  margin: auto;
+  padding: 4em;
 }
 
 .sub-con {
-    /* background: red; */
-    width: 180px;
+  /* background: red; */
+  width: 180px;
 }
 
 .score {
-    font-family: digital;
-    text-align: center;
-    background: #080001;
-    color: #F94F6D;
-    font-size: 7em;
-    margin: 0;
-    padding: .2em 0;
-    border-radius: 5px;
+  font-family: digital;
+  text-align: center;
+  background: #080001;
+  color: #f94f6d;
+  font-size: 7em;
+  margin: 0;
+  padding: 0.2em 0;
+  border-radius: 5px;
 }
 
 .btn {
-    font-size: 2em;
-    min-width: 40px;
-    font-family: digital;
-    color: #9AABD8;
-    border: 2px solid #9AABD8;
-    border-radius: 5px;
-    background: none;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
+  font-size: 2em;
+  min-width: 40px;
+  font-family: digital;
+  color: #9aabd8;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .btn:hover {
-    color: #d0d7eb;
-    border: 2px solid#d0d7eb;
-   
+  color: #d0d7eb;
+  border: 2px solid#d0d7eb;
 }
 
 .btn:active {
-    color: #F94F6D;
-    border: 2px solid #F94F6D;;
-    transform: scale(0.8);
+  color: #f94f6d;
+  border: 2px solid #f94f6d;
+  transform: scale(0.8);
 }
 
 .btn-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 .controls {
-    background: #F94F6D;
-    padding: 4em;
-    width: 60%;
-    margin: auto;
+  background: #f94f6d;
+  padding: 4em;
+  width: 60%;
+  margin: auto;
+}
+
+.btn-controls {
+  padding: 0.5em 0.6em;
+  background: #1b244a;
+  color: #ffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.btn-controls:hover {
+  color: #6574ac;
 }

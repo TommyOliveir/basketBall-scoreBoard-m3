@@ -70,6 +70,9 @@ function generate() {
     audio.play(); /* To make it play again */
     nbaSound.textContent = "Stop";
   }
+  setTimeout(() => {
+    nbaSound.textContent = "NBA Sound";
+  }, 12000);
 }
 
 ///////////
@@ -86,4 +89,7 @@ function timeoOut() {
     audiotimeout.play(); /* To make it play again */
     timeoutSound.textContent = "Stop";
   }
+  setTimeout(() => {
+    timeoutSound.textContent = "Time Out";
+  }, 5000);
 }
